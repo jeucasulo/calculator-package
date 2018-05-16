@@ -14,6 +14,11 @@ class CalculatorServiceProvider extends ServiceProvider
     public function boot()
     {
         include __DIR__.'/routes.php';
+        
+        // from -> to, de: para:
+        $this->publishes([
+            __DIR__.'/views' => base_path('resources/views/Devdojo'),
+        ]);
     }
 
     /**
