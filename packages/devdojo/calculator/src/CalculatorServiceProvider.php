@@ -18,7 +18,7 @@ class CalculatorServiceProvider extends ServiceProvider
         // from -> to, de: para:
         $this->publishes([
             __DIR__.'/views' => base_path('resources/views/Devdojo'),
-        ]);
+        ],'calculator');
     }
 
     /**
